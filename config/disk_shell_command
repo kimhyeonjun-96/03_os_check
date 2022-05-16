@@ -1,0 +1,2 @@
+1. 테스트 용도 (vdb가 10% 이상이라면 출력 )
+df -Th | awk '$1 ~/.*vdb.*/ {split($6, arr, "%"); if ( arr[1] > 10) print $0}'
